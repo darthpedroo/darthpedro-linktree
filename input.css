@@ -6,7 +6,7 @@
 }
 
 .social-button{
-    @apply p-4 size-12 sm:size-16 md:size-20 flex items-center justify-center
+    @apply p-4 size-16 sm:size-16 md:size-20 flex items-center justify-center
     rounded-full hover:scale-110 transition-transform
 }
 
