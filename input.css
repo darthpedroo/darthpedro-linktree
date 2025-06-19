@@ -1,4 +1,17 @@
 @import "tailwindcss";
+@plugin "@midudev/tailwind-animations";
+
+@font-face{
+    font-family: 'Montserrat';
+    src: url('/assets/fonts/Montserrat.woff2') format(
+        'woff2'
+    );
+    font-style: normal;
+    font-weight: 100 700;
+    font-display: swap;
+
+    --font-sans: 'Montserrat', 'system-ui', 'sans-serif';
+}
 
 @theme {
     --color-primary: #09f;
@@ -7,7 +20,7 @@
 
 .social-button{
     @apply p-4 size-16 sm:size-16 md:size-20 flex items-center justify-center
-    rounded-full hover:scale-110 transition-transform
+    rounded-full hover:scale-110 transition-transform animate-roll-in
 }
 
 .social-svg{
